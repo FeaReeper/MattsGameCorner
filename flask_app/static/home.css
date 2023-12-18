@@ -1,0 +1,100 @@
+* {
+    margin: 20px auto;
+}
+
+body {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+}
+
+.logo {
+    height: 260px;
+    width: 260px;
+    position: relative;
+    bottom: 50px;
+}
+
+.nav-title {
+    height: 200px;
+    display: flex;
+    background-color: #34393e;
+}
+
+.game-names {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.share {
+    color: #28a644;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    width: 1400px;
+}
+
+.left-container {
+    flex: 1;
+}
+
+.right-container {
+    flex: 1;
+}
+
+.box {
+    width: 350px;
+    padding: 10px 20px;
+    background-color: #34393e;
+    border-radius: 5px;
+}
+
+.register {
+    color: #f6d172;
+    font-size: 40px;
+}
+
+.login {
+    color: #c09bd4;
+    font-size: 40px;
+}
+
+.label {
+    color: white;
+}
+
+.submit-button {
+    background-color: #f6d172;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+}
+
+.login-button {
+    background-color: #c09bd4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    font-weight: bolder;
+}
+
+.solid1 {
+    border-top: 3px solid #f75ca9;
+}
+
+.solid2 {
+    border-top: 3px solid #f75ca9;
+}
+
+.solid-1-nav {
+    width: 600px;
+}
+
+.solid-bars {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

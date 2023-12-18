@@ -1,0 +1,31 @@
+python
+javascript
+java
+react
+flask
+bootstrap
+tailwind
+mongodb
+mysql
+developer
+code
+database
+css
+html
+debug
+console
+terminal
+application
+jinja
+django
+props
+routes
+controllers
+models
+oop
+rubber duck
+front end
+back end
+full stack
+error
+url

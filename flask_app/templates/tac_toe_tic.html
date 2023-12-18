@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tac-Toe-Tic</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tac_toe_tic.css') }}">
+</head>
+<body>
+    <div class="nav-title">
+        <div class="solid-bars">
+            <hr class="solid-1 solid-1-nav">
+            <img src="{{url_for('static', filename='images/left_games.png')}}" alt="" class="margin-zero-auto">
+            <hr class="solid-1 solid-1-nav">
+        </div>
+        <img class="logo" src="{{url_for('static', filename='images/logo.jpg')}}" alt="">
+        <div class="solid-bars">
+            <hr class="solid-1 solid-1-nav">
+            <img src="{{url_for('static', filename='images/right_games.png')}}" alt="" class="margin-zero-auto">
+            <hr class="solid-1 solid-1-nav">
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a class="log-out" href="/dashboard">Back to Games</a>
+        <a class="log-out" href="/logout">Log Out</a>
+    </div>
+    <div class="d-flex-justify-center">
+        <p class="game-title margin-zero-auto">Tac-Toe-Tic</p>
+    </div>
+    <div class="tac-game margin-zero-auto">
+        <form action="" method="POST" class="tac-form">
+            <table  class="tac-table">
+                {% for j in range(0, 3) %}
+                <tr>
+                {% for i in range(0, 3) %}
+                    <td class="td-tac">
+                        <button type="submit" name="choice" value="{{j*3+i+1}}"
+                        {{"disabled" if ttt.spot_string(i, j)!="_"}} class="tac-button">
+                        {{ttt.spot_string(i, j)}}
+                    </button>
+                    </td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+            <div class="d-flex-justify-center margin-zero-auto"><button type="submit" name="reset">Start Over</button></div>
+        </form>
+    </div>
+</body>
+</html>

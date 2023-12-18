@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neck Swing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='neck_swing.css') }}">
+</head>
+<body>
+    <div class="nav-title">
+        <div class="solid-bars">
+            <hr class="solid-1 solid-1-nav">
+            <img src="{{url_for('static', filename='images/left_games.png')}}" alt="" class="margin-zero-auto">
+            <hr class="solid-1 solid-1-nav">
+        </div>
+        <img class="logo" src="{{url_for('static', filename='images/logo.jpg')}}" alt="">
+        <div class="solid-bars">
+            <hr class="solid-1 solid-1-nav">
+            <img src="{{url_for('static', filename='images/right_games.png')}}" alt="" class="margin-zero-auto">
+            <hr class="solid-1 solid-1-nav">
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a class="log-out" href="/dashboard">Back to Games</a>
+        <a class="log-out" href="/logout">Log Out</a>
+    </div>
+    <div class="d-flex-justify-center">
+        <p class="game-title margin-zero-auto">Neck Swing</p>
+    </div>
+    <div class="game">
+        <img src={{tries}} class="size">
+        <div>
+        {% for i in to_display %}
+            <span> {{i}} </span>
+        {% endfor %}
+        </div>
+        <form action="{{ url_for('add_char') }}" method=post>
+            <div>
+            <label>Enter a letter:</label>
+            <div>
+                <input type="text" maxlength="1" name="letter">
+            </div>
+            </div>
+            <p><button type="submit">Submit</button></p>
+        </form>
+        <div>
+            {% for i in word_set %}
+                <span>{{i}}</span>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+* {
+    margin: 20px auto;
+}
+
+body {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+}
+
+.logo {
+    height: 260px;
+    width: 260px;
+    position: relative;
+    bottom: 50px;
+}
+
+.nav-title {
+    height: 200px;
+    display: flex;
+    background-color: #34393e;
+}
+
+.solid1 {
+    border-top: 3px solid #f75ca9;
+}
+
+.solid2 {
+    border-top: 3px solid #f75ca9;
+}
+
+.solid-1-nav {
+    width: 600px;
+}
+
+.solid-bars {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    display: flex;
+    
+}
+
+.log-out {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.container {
+    width: 1500px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    height: 350px;
+    width: 350px;
+    margin: 10px auto 0px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #68b1c4;
+}
+
+.game-name {
+    font-size: 35px;
+    margin: 10px auto;
+}
+
+.play-button {
+    padding: 10px 30px;
+    margin: 10px auto;
+}
+
+.game-image {
+    border: 2px solid black;
+    margin: 0px auto;
+    padding: 2px;
+}
+
+.tic-tac-toe-image {
+    height: 180px;
+    margin: 0px auto;
+}
